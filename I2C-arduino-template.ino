@@ -2,10 +2,10 @@
 
 #include <LiquidCrystal_I2C.h>
 
-byte location = 0; // [0, 7]
-byte omega[8] = {B00000, B01110, B10001, B10001, B10001, B01010, B11011, B00000};
+uint8_t location = 0; // [0, 7]
+uint8_t omega[] = {0x0, 0xE, 0x11, 0x11, 0x11, 0xA, 0x1B, 0x0};
 
-uint8_t lcd_addr = 0x00;
+uint8_t lcd_addr = 0x0;
 uint8_t lcd_rows = 2;
 uint8_t lcd_cols = 16;
 
